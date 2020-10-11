@@ -62,9 +62,11 @@ def over?(board)
 end
 
 def winner(board)
-  if draw?(board) == true
-    return nil
+  if winner == "X"
+    return "X"
+  elsif winner == "O"
+    return "O"
   else
-    return won?(board)
+    return nil
   end
 end
