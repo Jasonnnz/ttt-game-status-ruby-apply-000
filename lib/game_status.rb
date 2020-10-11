@@ -69,3 +69,21 @@ def winner(board)
     return position_1
   end
 end
+
+def turn_count(board)
+  counter = 0 
+  board.each do |elem|
+    if elem == "X" || elem == "O"
+      counter += 1 
+    end
+  end
+  return counter
+end
+
+def current_player(board)
+  if turn_count(board) % 2 == 0 
+    return "X"
+  else 
+    return "O"
+  end
+end
