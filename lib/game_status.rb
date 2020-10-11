@@ -63,7 +63,7 @@ def winner(board)
   winning_array = won?(board)
   if winning_array == false 
     return nil
-  elsif position_1 == "X"
+  elsif win_combination == "X"
     return position_1
   elsif position_1 == "O"
     return position_1
