@@ -64,7 +64,7 @@ def winner(board)
   if winning_array == false 
     return nil
   else
-    return current_player(board)
+    return 
   end
 end
 
