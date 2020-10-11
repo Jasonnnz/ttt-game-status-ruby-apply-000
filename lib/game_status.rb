@@ -60,11 +60,9 @@ def over?(board)
 end
 
 def winner(board)
-  if finalwinner == "X"
-    return "X"
-  elsif finalwinner == "O"
-    return "O"
-  else
+  winning_array = won?(board)
+  if winning_array == false 
     return nil
-  end
+  else
+    return true
 end
