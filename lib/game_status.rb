@@ -65,9 +65,9 @@ def winner(board)
   winning_array = won?(board)
   if winning_array == false 
     return nil
-  elsif win == "X"
-    return win
-  elsif win == "O"
-    return win
+  elsif position_1 == "X"
+    return position_1
+  elsif position_1 == "O"
+    return position_1
   end
 end
